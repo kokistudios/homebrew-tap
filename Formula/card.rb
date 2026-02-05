@@ -11,7 +11,7 @@ class Card < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kokistudios/card/releases/download/v1.0.0/card_1.0.0_darwin_amd64.tar.gz"
-      sha256 "c77474e55a60ba815ef2d27a3c356393e211ad9e2f86cea64d44a38891bf3a1a"
+      sha256 "87c313f73a2224c7eeaa366bcc788c11f1e6638a5010e9f6cb1c63eb3da7d710"
 
       def install
         bin.install "card"
@@ -19,7 +19,7 @@ class Card < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kokistudios/card/releases/download/v1.0.0/card_1.0.0_darwin_arm64.tar.gz"
-      sha256 "cab5b14df5714c2beb1a73e7a98d3227653d4fea11cdca1bd089018e6691c44c"
+      sha256 "b1937c3e6971aea0218d725dee994c776213ffcd65147f898766a73686a98d19"
 
       def install
         bin.install "card"
@@ -30,14 +30,14 @@ class Card < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kokistudios/card/releases/download/v1.0.0/card_1.0.0_linux_amd64.tar.gz"
-      sha256 "9257f1e9bb594ec10ff10837129d153cb5ea768e5d83d0fe47ea149258798aec"
+      sha256 "f8d89c77fbca98e070ca85e5f7ecb7230582e12b2610e56a978585c476bfa7ff"
       def install
         bin.install "card"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kokistudios/card/releases/download/v1.0.0/card_1.0.0_linux_arm64.tar.gz"
-      sha256 "027d0fd5741005c0888631ca8d0fd9847f99123d747d582ad16e80bdb2468bc5"
+      sha256 "e7100d0a467395db8e47876fe6178ad84c757150ea0dccc6ed18950927d06bf8"
       def install
         bin.install "card"
       end
